@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regstration Form</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color:pink;
+        }
+        .container{
+            padding: 30px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>PROJECT MANGEMENT</h1>
+    <form>
+        <table align="center" >
+        <p>
+            <label> Project Name
+            <input type="text" name="customer_name" required>
+            </label> 
+            </p>
+            <p>
+                 Assigned To
+              
+                <select name="assigned to" id="assigned to">
+                    <option value="number 1">number 1</option>
+                    <option value="number 2">number 2</option>
+                    <option value="number 3">number 3</option>
+                    <option value="number 4">number 4</option>
+                </select>
+                </p>   
+                <p>
+                    <label> Start Date<input type="date" name="Start Date" ></label><br>
+                    </p>
+                    <p>
+                        <label>End date:<input type="date" name="End date" ></label><br>
+                    </p>
+       
+       <p> Priority:
+        <input type="radio" name="priority"id="high">
+        <label for="high">high</label>
+        <input type="radio" name="priority"id="avg">
+        <label for="avg">avg</label>
+        <input type="radio" name="priority"id="high">
+        <label for="low">low</label></p><br>
+        <p><label for="description">Description:</label>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea></p><br>
+       <p> Project type:
+        <input type="radio" name="project type"id="simple">
+        <label for="simple">simple</label>
+        <input type="radio" name="project type"id="standalone">
+        <label for="standalone">standalone</label>
+        <input type="radio" name="project type"id="web based">
+        <label for="web based">web based</label>
+        <input type="radio" name="project type"id="mobile application">
+        <label for="mobile application">mobile application</label></p><br>
+        <button type="submit" value="submit">Submit</button>
+        <button type="clear" value="clear">Clear</button>
+        </table>
+    </form>
+</body>
+</html>
